@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
             // send post to server
             val description = findViewById<EditText>(R.id.etDescription).text.toString()
             val user = ParseUser.getCurrentUser()
-            submitPost(description, user, photoFile)
+            if (photoFile != null) {
+                submitPost(description, user, photoFile!!)
+            }
         }
 
         findViewById<Button>(R.id.btnTakePicture).setOnClickListener {
@@ -99,16 +101,17 @@ class MainActivity : AppCompatActivity() {
         return File(mediaStorageDir.path + File.separator + fileName)
     }
 
-    fun submitPost(description: String, user: ParseUser, photoFile: File?)
+    fun submitPost(description: String, user: ParseUser, photoFile: File)
     {
         val post = Post()
         post.setDescription(description)
         post.setUser(user)
         post.setImage(ParseFile(photoFile))
+
         post.saveInBackground{exception ->
             if (exception != null)
             {
-                Log.e(TAG, "Error while saving post")
+                Log.e(TAG, "Error while saving post" + exception.printStackTrace().toString())
                 exception.printStackTrace()
             } else {
                 Log.i(TAG, "Post was succesfully saved")
