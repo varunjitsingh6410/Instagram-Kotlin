@@ -4,8 +4,6 @@
 
 ## Features
 
-The following **required** functionality is completed:
-
 - User can sign up to create a new account using Parse authentication.
 - User can log into his or her account.
 - The current signed in user is persisted across app restarts.
@@ -16,10 +14,17 @@ The following **required** functionality is completed:
 
 <img src="https://github.com/varunjitsingh6410/Instagram-Kotlin/blob/master/Instagram-Demo.gif?raw=true" width="250" height="400">
 
+## Part Two Features
+- User can view 20 posts submitted to "Instagram".
+- The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. 
 
+
+## Video Walkthrough
+
+<img src="https://github.com/varunjitsingh6410/Instagram-Kotlin/blob/master/Instagram-Demo-p2.gif?raw=true" width="250" height="400">
 
 ## Notes
-- Instagram clone built using Android in Kotlin and Parse hosted on Back4App
+- Instagram clone built using Android in Kotlin and Parse hosted on Back4App. Implemented using a bottom navigation controller, recycler view, and fragments. 
 
 ## Open-source libraries used
 
