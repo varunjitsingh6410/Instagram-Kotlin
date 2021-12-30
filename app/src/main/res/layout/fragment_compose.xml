@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ComposeFragment">
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Write a post description"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Picture" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>
