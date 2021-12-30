@@ -15,7 +15,7 @@
 <img src="https://github.com/varunjitsingh6410/Instagram-Kotlin/blob/master/Instagram-Demo.gif?raw=true" width="250" height="400">
 
 ## Part Two Features
-- User can view 20 posts submitted to "Instagram".
+- User can view posts submitted to "Instagram".
 - The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. 
 
 
